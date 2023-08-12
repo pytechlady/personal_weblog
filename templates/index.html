@@ -15,9 +15,9 @@
         <h1>Recent Posts</h1>
             {% for blog in blogs %}
                 <div class="card bg-dark p-4">
-                    <p>blog_title: {{blog.blog_title}}</p>
-                    <p>description: {{blog.description}}</p>
-                    <p>author: {{blog.author}}</p>
+                    <p>Title: {{blog.blog_title}}</p>
+                    <p>Content: {{blog.description}}</p>
+                    <p>Author: {{blog.author}} || Posted: {{blog.create_date}}</p>
                 </div>
                 {% endfor %}
           
